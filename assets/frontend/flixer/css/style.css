@@ -1,0 +1,186 @@
+                    @font-face {
+                        font-family: 'Poppins';
+                        src: url(Poppins-Light.ttf);
+                    }
+                    
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: 'Poppins', 'Roboto';
+                    }
+                    
+                    body {
+                        background: rgb(255, 255, 255);
+                        color: #333;
+                        font-size: 16px;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                    }
+                    
+                    .site-container .site-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        z-index: 1000;
+                    }
+                    
+                    .brand-container {
+                        height: 45px;
+                        width: 167px;
+                    }
+                    
+                    .brand-container .site-logo {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    
+                    .screen-reader-text {
+                        position: absolute;
+                        top: -9999px;
+                        left: -9999px;
+                    }
+                    
+                    .site-container .site-header a {
+                        color: #32373b;
+                        background: #00ff00;
+                        padding: 8px 18px;
+                        border-radius: 15px;
+                    }
+                    
+                    .banner {
+                        width: 100%;
+                        height: 100vh;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .banner::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 400px;
+                        z-index: 1;
+                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+                    }
+                    
+                    .banner::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 400px;
+                        z-index: 1;
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+                    }
+                    
+                    .banner .our-story-card-background {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+                        z-index: 10;
+                    }
+                    
+                    .banner .our-story-card-text {
+                        position: absolute;
+                        top: 55%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 100;
+                    }
+                    
+                    .banner .our-story-card-text .heading {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    
+                    .banner .our-story-card-text .heading h2 {
+                        font-size: 2.125em;
+                        color: #fff;
+                        letter-spacing: 2px;
+                        width: 80%;
+                    }
+                    
+                    .banner .our-story-card-text .heading h5 {
+                        font-size: 1.325em;
+                        color: #fff;
+                        font-weight: 400;
+                        padding: 5rem, 0;
+                        padding-bottom: 20px;
+                    }
+                    
+                    .inputError {
+                        color: #00ff00;
+                        margin-bottom: 6px;
+                        padding: 6px 3px;
+                        font-size: 15px;
+                    }
+                    
+                    .banner .our-story-card-text .heading p {
+                        font-size: 1em;
+                        color: #fff;
+                        font-weight: 400;
+                        padding: 25px, 0;
+                        padding-bottom: 20px;
+                    }
+                    
+                    .banner .global-search {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    .f-group {
+                        display: flex;
+                    }
+                    
+                    .banner .global-search input {
+                        height: 60px;
+                        min-width: 400px;
+                        padding: 10px, 10px, 0, 10px;
+                        padding-left: 20px;
+                        /*outline: none;*/
+                        outline-color: #00ff00;
+                        font-size: 16px;
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                        align-items: center;
+                        border-top: 0;
+                        border-left: 0;
+                        border-right: 0;
+                        border-bottom: 2px solid #00ff00;
+                    }
+                    
+                    .banner .global-search button {
+                        border: none;
+                        text-transform: uppercase;
+                        color: #32373b;
+                        /*outline: none;*/
+                        outline-color: #00ff00;
+                        letter-spacing: 0.1px;
+                        border-radius: 2px;
+                        background: #00ff00;
+                        box-shadow: 0 1px 0 rgba(0, 0, 0, 0, 0.45);
+                        font-size: 1.625 rem;
+                        line-height: 60px;
+                        min-width: 310px;
+                        padding: 0 30px;
+                        cursor: pointer;
+                    }

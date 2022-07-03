@@ -1,0 +1,56 @@
+<?php
+$pageTitle ="eMax || Registration";
+?>
+<?php require "backend\shared\header.php";?> 
+<body>
+    <section class="wrap">
+        <header class="site-header signUpBasicHeader">
+                <a href="index.php" class="brand-container" title="eMax">
+                    <img class="site-logo", src="frontend\assets\images\eMax Logo Banner-01.png" alt="eMax Logo">
+                    <span class="screen-reader-text">eMax</span>
+                </a>
+                <div class="site-header-button">
+                    <a href="signin.php" class= "signInLink" >Sign In</a>
+                </div>             
+        </header>
+    </section>
+    <section class="simpleContainer">
+        <div class="centreContainer">
+            <form action="">
+                <div class="regFormContainer">
+                    <div class="stepHeader-Container">
+                        <h1 class="stepTitle">
+                            Create an account to Experience the Maximum
+                        </h1>
+                    </div>
+                    <div class="stepHeader-body">
+                        <div class="group">
+                            <label for="fname" name="firstname">First Name</label>
+                            <input type="text" id="fname" name="firstname" autocomplete="off" required>
+                        </div>
+                        <div class="group">
+                            <label for="lname" name="lastname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" autocomplete="off" required>
+                        </div>
+                        <div class="group">
+                            <label for="email" name="email">E-mail</label>
+                            <input type="email" id="email" name="email" autocomplete="off" required>
+                        </div>
+                        <div class="group">
+                            <label for="pwd" name="Password">Password</label>
+                            <input type="text" id="pwd" name="pwd" autocomplete="off" required>
+                        </div>
+                        <div class="group r-me">
+                            <input type="checkbox" id="remember" name="remember" class="remember">
+                            <label for="remember" name="remember">Remember Me</label>
+                        </div>
+                    </div>
+                    <div class="submitBtnContainer">
+                        <button type="submit" name="submitButton">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>      
+    </section>
+</body>
+</html>
