@@ -1,1 +1,1 @@
-neoflex-video-subscription-cms
+emax-video-subscription-cms
