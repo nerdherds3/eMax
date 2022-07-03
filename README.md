@@ -1,1 +1,1 @@
-emax-video-subscription-cms
+emax-video-on-demand-subscription-based-system
